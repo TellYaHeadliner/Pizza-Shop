@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="/dist/css/bootstrap.css">
+    <script src="/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div class="collapse navbar-collapse justify-content-start " id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Order</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact us</a>
+              </li>
+            </ul>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-nav">
+              <div class="user_optio_box">
+                <a href="" style="margin-right: 10px; text-decoration: none;">
+                  <i class="bi bi-person-circle"></i>
+                </a>
+                <a href="">
+                  <i class="bi bi-bag"></i> 
+                </a>
+              </div>
+            </ul>
+          </div>
+      </nav>
+    <div class="container-fluid">
+      <div class="d-flex justify-content-center mt-4 text-warning text-center">
+        <h1>ĐÂY LÀ MÓN ĂN CỦA CHÚNG TÔI</h1>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="d-flex justify-content-center flex-wrap text-center">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" class="width: 16rem; margin-right:16px margin-top:16px">
+              <img src="/img/1.webp" alt="1" class="rounded-circle my-3 mx-auto w-50">
+              <h5 class="card-title">Hải sản và phô mai hun khói Pizza</h5>
+              <p>"Tôm, mực, nghêu, phô mai hun khói và xốt cà chua"</p>
+              <p class="card-text" style="font-weight: bold;">263000 VND</p>
+              <a href="#" class="btn btn-primary d-flex justify-content-center" id="mon_1" onclick="themVoGioHang(1)">Bỏ vào giỏ hàng</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" class="width: 16rem; margin-right:16px margin-top:16px">
+              <img src="/img/2.webp" alt="1" class="rounded-circle my-3 mx-auto w-50">
+              <h5 class="card-title">Margherita Pizza</h5>
+              <p>"Nguyên liệu: phô mai Mozzarella, Grano Padano, xốt cà chua và húng tây (Món chay)"</p>
+              <p class="card-text" style="font-weight: bold;">160000 VND</p>
+              <a href="#" class="btn btn-primary d-flex justify-content-center" id="mon_2" onclick="themVoGioHang(2)">Bỏ vào giỏ hàng</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" class="width: 16rem; margin-right:16px margin-top:16px">
+              <img src="/img/3.webp" alt="1" class="rounded-circle my-3 mx-auto w-50">
+              <h5 class="card-title">Pizza cá hồi sốt kem miso"</h5>
+              <p>"Nguyên liệu: Cá hồi với miso ngọt và xốt kem béo thơm"</p>
+              <p class="card-text" style="font-weight: bold;">273000 VND</p>
+              <a href="#" class="btn btn-primary d-flex justify-content-center" id="mon_3" onclick="themVoGioHang(3)">Bỏ vào giỏ hàng</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" class="width: 16rem; margin-right:16px margin-top:16px">
+              <img src="/img/4.webp" alt="1" class="rounded-circle my-3 mx-auto w-50">
+              <h5 class="card-title">Tôm và xốt Mayonnaise Pizza</h5>
+              <p>"Nguyên liệu:Tôm và bông cải xanh kèm xốt mayonnaise'"</p>
+              <p class="card-text" style="font-weight: bold;">245000 VND</p>
+              <a href="#" class="btn btn-primary d-flex justify-content-center" id="mon_4" onclick="themVoGioHang(4)">Bỏ vào giỏ hàng</a>
+            </div>
+          </div>
+          <div class="col-md-3 mt-3">
+            <div class="card" class="width: 16rem; margin-right:16px margin-top:16px">
+              <img src="/img/5.webp" alt="1" class="rounded-circle my-3 mx-auto w-50">
+              <h5 class="card-title">Gà sốt Teriyaki Pizza</h5>
+              <p>"Gà xốt nước tương ngọt với rong biển, lá tía tô và mayonnaise"</p>
+              <p class="card-text" style="font-weight: bold;">245000 VND</p>
+              <a href="#" class="btn btn-primary d-flex justify-content-center" id="mon_5" onclick="themVoGioHang(5)">Bỏ vào giỏ hàng</a>
+            </div>
+          </div>
+          <div class="col-md-3 mt-3">
+            <div class="card" class="width: 16rem; margin-right:16px margin-top:16px">
+              <img src="/img/6.webp" alt="1" class="rounded-circle my-3 mx-auto w-50">
+              <h5 class="card-title">Pizza bò kho</h5>
+              <p>"Được lấy cảm hứng từ món Bò kho/Bò sốt vang"</p>
+              <p class="card-text" style="font-weight: bold;">200000 VND</p>
+              <a href="#" class="btn btn-primary d-flex justify-content-center" id="mon_6" onclick="themVoGioHang(6)">Bỏ vào giỏ hàng</a>
+            </div>
+          </div>
+          <div class="col-md-3 mt-3">
+            <div class="card" class="width: 16rem; margin-right:16px margin-top:16px">
+              <img src="/img/7.webp" alt="1" class="rounded-circle my-3 mx-auto w-50">
+              <h5 class="card-title">4 loại nấm Pizza</h5>
+              <p>"Món chay, nấm trắng và nâu, nấm linh chi trắng và nâu, tỏi"</p>
+              <p class="card-text" style="font-weight: bold;">190000 VND</p>
+              <a href="#" class="btn btn-primary d-flex justify-content-center" id="mon_7" onclick="themVoGioHang(7)">Bỏ vào giỏ hàng</a>
+            </div>
+          </div>
+          <div class="col-md-3 mt-3">
+            <div class="card" class="width: 16rem; margin-right:16px margin-top:16px">
+              <img src="/img/8.webp" alt="1" class="rounded-circle my-3 mx-auto w-50">
+              <h5 class="card-title">Xốt bí ngòi quế tây Pizza</h5>
+              <p>"Món chay, bí ngòi và hoa cùng xốt húng tây và hạt'"</p>
+              <p class="card-text" style="font-weight: bold;">170000 VND</p>
+              <a href="#" class="btn btn-primary d-flex justify-content-center" id="mon_8" onclick="themVoGioHang(8)">Bỏ vào giỏ hàng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              Giỏ hàng của bạn
+            </div>
+            <div class="card-body">
+              <!-- Đây là nơi bạn có thể hiển thị nội dung của giỏ hàng -->
+              <!-- Ví dụ: -->
+              <ul id="gioHang">
+    
+              </ul>
+              <p id="sum">Tổng cộng: </p>
+              
+            </div>
+            <a href="vertification.html" class="btn btn-primary">Xác nhận</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="text-center">
+      <div class="container-fluid mt-3">
+        <p>Đây là trang web bán pizza</p>
+      </div>
+    </footer>
+    <script src="/js/src/order.js"></script>
+</body>
+</html>
